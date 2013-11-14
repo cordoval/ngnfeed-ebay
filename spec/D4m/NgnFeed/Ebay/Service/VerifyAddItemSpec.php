@@ -1,9 +1,4 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/9/13 - 6:16 PM
- * 
- */
 
 namespace spec\D4m\NgnFeed\Ebay\Service;
 
@@ -55,6 +50,4 @@ class VerifyAddItemSpec extends ObjectBehavior
 
         $this->execute()->shouldReturn('<xml>Response</xml>');
     }
-
-
 }

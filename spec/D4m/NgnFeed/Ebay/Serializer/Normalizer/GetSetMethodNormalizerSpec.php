@@ -1,9 +1,4 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/3/13 - 11:45 PM
- * 
- */
 
 namespace spec\D4m\NgnFeed\Ebay\Serializer\Normalizer;
 

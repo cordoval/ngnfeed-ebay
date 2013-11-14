@@ -1,12 +1,6 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/1/13 - 7:15 PM
- * 
- */
 
 namespace spec\D4m\NgnFeed\Ebay\Model;
-
 
 use PhpSpec\ObjectBehavior;
 
@@ -32,5 +26,4 @@ class ItemSpec extends ObjectBehavior
         $this->setPrimaryCategory($primaryCategory);
         $this->getPrimaryCategory()->shouldHaveType($primaryCategory);
     }
-
 }

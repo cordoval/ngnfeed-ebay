@@ -1,9 +1,4 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/11/13 - 6:52 PM
- * 
- */
 
 namespace spec\D4m\NgnFeed\Ebay\Service;
 

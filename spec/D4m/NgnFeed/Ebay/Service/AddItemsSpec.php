@@ -1,9 +1,4 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/9/13 - 6:33 PM
- * 
- */
 
 namespace spec\D4m\NgnFeed\Ebay\Service;
 
@@ -54,5 +49,4 @@ class AddItemsSpec extends ObjectBehavior
 
         $this->execute()->shouldReturn('<xml>Response</xml>');
     }
-
 }

@@ -1,9 +1,4 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 6/21/13 - 6:06 PM
- * 
- */
 
 namespace spec\D4m\NgnFeed\Ebay\Security\Auth;
 
@@ -36,6 +31,4 @@ class CredentialsSpec extends ObjectBehavior
         $this->shouldThrow(new InvalidArgumentException('Invalid Credential'))
             ->duringGetKey('invalid_key');
     }
-
-
 }

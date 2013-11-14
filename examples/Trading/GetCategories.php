@@ -1,9 +1,5 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 10/17/13 - 12:07 AM
- * 
- */
+
 require_once(__DIR__ . '/../../vendor/autoload.php');
 
 use D4m\NgnFeed\Ebay\TradingManager;

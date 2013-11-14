@@ -1,9 +1,4 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 6/23/13 - 2:12 PM
- * 
- */
 
 namespace spec\D4m\NgnFeed\Ebay\Security;
 
@@ -40,7 +35,6 @@ class SessionSpec extends ObjectBehavior
      */
     function it_should_return_response_when_sending_a_request($transport, $response)
     {
-
         $apiCallName = ['X-EBAY-API-CALL-NAME' => "TestCall"];
         $parameters = ['headers' => $apiCallName, 'request' => [] ];
         $authType = 'api';
@@ -52,7 +46,4 @@ class SessionSpec extends ObjectBehavior
         $response->shouldHaveType('Guzzle\Http\Message\Response');
 
     }
-
-
-
 }

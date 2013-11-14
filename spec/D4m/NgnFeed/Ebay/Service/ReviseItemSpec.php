@@ -1,9 +1,4 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/10/13 - 5:34 PM
- * 
- */
 
 namespace spec\D4m\NgnFeed\Ebay\Service;
 
@@ -55,5 +50,4 @@ class ReviseItemSpec extends ObjectBehavior
 
         $this->execute()->shouldReturn('<xml>Response</xml>');
     }
-
 }

@@ -1,9 +1,4 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 6/22/13 - 9:06 AM
- * 
- */
 
 namespace spec\D4m\NgnFeed\Ebay\Service;
 
@@ -24,8 +19,4 @@ class ServiceFactorySpec extends ObjectBehavior
         $this->getService('AddItem')->shouldImplement('D4m\NgnFeed\Ebay\Service\ApiCall');
         $this->getService('AddItem')->shouldHaveType('D4m\NgnFeed\Ebay\Service\AddItem');
     }
-
-    function it_is_pending()
-    {}
-
 }
