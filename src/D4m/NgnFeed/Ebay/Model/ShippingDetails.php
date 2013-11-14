@@ -1,16 +1,9 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/4/13 - 11:15 PM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Model;
 
-
 class ShippingDetails extends Entity
 {
-
     protected $allowPaymentEdit;
     protected $applyShippingDiscount;
     protected $globalShipping;

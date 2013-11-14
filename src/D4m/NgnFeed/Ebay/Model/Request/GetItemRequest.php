@@ -2,7 +2,6 @@
 
 namespace D4m\NgnFeed\Ebay\Model\Request;
 
-
 class GetItemRequest extends BaseRequest
 {
     protected $itemID;
@@ -22,7 +21,4 @@ class GetItemRequest extends BaseRequest
     {
         return $this->itemID;
     }
-
-
-
 }

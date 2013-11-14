@@ -1,12 +1,6 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 6/23/13 - 2:37 PM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Service;
-
 
 abstract class BaseApiCall implements ApiCall
 {
@@ -52,6 +46,7 @@ abstract class BaseApiCall implements ApiCall
 
     /**
      * @param RequestFactory $requestFactory
+     * @return $this
      */
     public function setRequestFactory($requestFactory)
     {
@@ -62,7 +57,7 @@ abstract class BaseApiCall implements ApiCall
 
     protected function addOptionsToRequest($request, $options)
     {
-        foreach($options as $method => $value ) {
+        foreach ($options as $method => $value) {
             $methodCamelized = $this->camelize($method);
             $request->{'set'. $methodCamelized}($value);
         }
@@ -90,7 +85,8 @@ abstract class BaseApiCall implements ApiCall
     public function getRequest()
     {
         return $this->requestFactory
-                ->getRequest($this->apiCallName['X-EBAY-API-CALL-NAME']);
+                ->getRequest($this->apiCallName['X-EBAY-API-CALL-NAME'])
+        ;
     }
 
     public function execute()
@@ -105,5 +101,4 @@ abstract class BaseApiCall implements ApiCall
 
         return $response;
     }
-
 }

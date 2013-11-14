@@ -1,12 +1,6 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 9/10/13 - 12:59 AM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Model\Enum;
-
 
 class ShippingRegionCode
 {

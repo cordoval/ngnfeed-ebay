@@ -1,6 +1,5 @@
-/vendor/
-/build/
-/bin/
-/samples/
-/composer.phar
-.idea
+vendor
+build
+bin
+samples
+composer.phar

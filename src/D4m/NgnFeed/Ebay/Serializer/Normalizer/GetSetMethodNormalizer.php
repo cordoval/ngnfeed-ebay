@@ -1,9 +1,4 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/3/13 - 8:25 PM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Serializer\Normalizer;
 
@@ -65,7 +60,7 @@ class GetSetMethodNormalizer extends SerializerAwareNormalizer implements Normal
     /**
      * {@inheritdoc}
      */
-    public function normalize($object, $format = null, array $context = array())
+    public function normalize($object, $format = null, array $context = [])
     {
         $reflectionObject = new \ReflectionObject($object);
         $reflectionMethods = $reflectionObject->getMethods(\ReflectionMethod::IS_PUBLIC);
@@ -83,7 +78,7 @@ class GetSetMethodNormalizer extends SerializerAwareNormalizer implements Normal
 
                 $attributeValue = $method->invoke($object);
 
-                if($this->ignoreNullAttributes && is_null($attributeValue) ) {
+                if ($this->ignoreNullAttributes && is_null($attributeValue) ) {
                     continue;
                 }
 
@@ -97,10 +92,10 @@ class GetSetMethodNormalizer extends SerializerAwareNormalizer implements Normal
                 $attributes[$attributeName] = $attributeValue;
             }
 
-            if(count($virtualFieldsCollection) > 0) {
+            if (count($virtualFieldsCollection) > 0) {
 
-                foreach($virtualFieldsCollection as $field => $virtualFieldValues) {
-                    foreach( $virtualFieldValues as $index => $attributeValue) {
+                foreach ($virtualFieldsCollection as $field => $virtualFieldValues) {
+                    foreach ( $virtualFieldValues as $index => $attributeValue) {
                         $attributeName = ucfirst($field).'___'.$index;
                         if (null !== $attributeValue && !is_scalar($attributeValue)) {
                             $attributeValue = $this->serializer->normalize($attributeValue, $format);
@@ -153,8 +148,7 @@ class GetSetMethodNormalizer extends SerializerAwareNormalizer implements Normal
 
             if (method_exists($object, $setter)) {
                 $object->$setter($value);
-            }
-            else if(is_callable(array( $object, $setter))) {
+            } else if(is_callable(array( $object, $setter))) {
                 $object->$setter($value);
             }
         }
@@ -236,16 +230,15 @@ class GetSetMethodNormalizer extends SerializerAwareNormalizer implements Normal
     }
 
     /**
-     * Checkis if a method's name is get.* but set as __call function
+     * Checks if a method's name is get.* but set as __call function
      *
      * @param \ReflectionObject $reflectionObject
      * @param $reflectionAttribute
      *
-     * @return bool
+     * @return Boolean
      */
     private function hasGetMethod(\ReflectionObject $reflectionObject, $reflectionAttribute)
     {
         return $reflectionObject->hasProperty($reflectionAttribute);
     }
-
 }

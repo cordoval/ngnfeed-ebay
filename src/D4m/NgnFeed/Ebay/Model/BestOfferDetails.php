@@ -1,12 +1,6 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/24/13 - 2:18 AM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Model;
-
 
 class BestOfferDetails extends Entity
 {

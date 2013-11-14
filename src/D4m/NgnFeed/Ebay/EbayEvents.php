@@ -1,12 +1,6 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 9/13/13 - 1:49 AM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay;
-
 
 final class EbayEvents
 {

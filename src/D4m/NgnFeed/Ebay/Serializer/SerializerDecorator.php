@@ -1,12 +1,6 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 6/28/13 - 3:31 AM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Serializer;
-
 
 class SerializerDecorator
 {
@@ -28,5 +22,4 @@ class SerializerDecorator
     {
         return preg_replace("/___(\d+)>/i", ">", $data);
     }
-
 }

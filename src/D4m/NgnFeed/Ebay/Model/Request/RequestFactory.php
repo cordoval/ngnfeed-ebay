@@ -1,16 +1,9 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/6/13 - 10:08 AM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Model\Request;
 
-
 class RequestFactory
 {
-
     public function getRequest($apiCallName)
     {
         $requestName = $apiCallName.'Request';
@@ -39,5 +32,4 @@ class RequestFactory
     {
         return __NAMESPACE__;
     }
-
 }

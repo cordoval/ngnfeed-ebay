@@ -1,12 +1,6 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 6/22/13 - 10:19 AM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Transport;
-
 
 use Guzzle\Http\Client;
 
@@ -16,13 +10,11 @@ class HttpClient
 
     public function __construct(Client $client = null)
     {
-        if(is_null($client)) {
-           $this->client = new Client();
-        }
-        else {
+        if (is_null($client)) {
+            $this->client = new Client();
+        } else {
             $this->client = $client;
         }
-
     }
 
     /**
@@ -43,8 +35,10 @@ class HttpClient
 
     public function send($url, $headers, $postBody)
     {
-        $request = $this->client->post($url, $headers, $postBody );
-        return $request->send();
+        return $this
+            ->client
+            ->post($url, $headers, $postBody)
+            ->send()
+        ;
     }
-
 }

@@ -5,6 +5,7 @@ namespace D4m\NgnFeed\Ebay\Service;
 class AddItems extends BaseApiCall
 {
     const MAX_ITEMS = 5;
+
     protected $addItemRequestContainers;
 
     public function __construct($addItemRequestContainers)
@@ -23,10 +24,9 @@ class AddItems extends BaseApiCall
         $addItemsRequest = $this->getRequest();
         $counter = 1;
         foreach($this->addItemRequestContainers as $addItemRequestContainer) {
-            if($counter <= self::MAX_ITEMS) {
+            if ($counter <= self::MAX_ITEMS) {
                 $addItemsRequest->addAddItemRequestContainer($addItemRequestContainer);
-            }
-            else {
+            } else {
                 break;
             }
             $counter ++;
@@ -36,6 +36,5 @@ class AddItems extends BaseApiCall
         $response = $this->session->sendRequest($this->apiCallName, $this->parameters);
 
         return $response;
-
     }
 }

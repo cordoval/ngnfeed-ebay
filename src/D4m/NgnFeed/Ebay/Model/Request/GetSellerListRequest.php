@@ -2,7 +2,6 @@
 
 namespace D4m\NgnFeed\Ebay\Model\Request;
 
-
 class GetSellerListRequest extends BaseRequest
 {
     protected $userID;
@@ -243,7 +242,4 @@ class GetSellerListRequest extends BaseRequest
     {
         return $this->userID;
     }
-
-
-
 }

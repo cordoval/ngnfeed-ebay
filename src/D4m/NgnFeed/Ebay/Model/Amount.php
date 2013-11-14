@@ -1,12 +1,6 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 9/5/13 - 9:02 PM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Model;
-
 
 class Amount extends Entity
 {

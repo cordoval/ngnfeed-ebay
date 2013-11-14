@@ -1,12 +1,6 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/4/13 - 3:19 AM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Model\Enum;
-
 
 class ListingTypeCode
 {
@@ -24,5 +18,4 @@ class ListingTypeCode
     const EXPRESS = "Express";
     const SHOPPING = "Shopping";
     const CUSTOM_CODE = "CustomCode";
-
 }

@@ -1,12 +1,6 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/5/13 - 8:59 PM
- *
- */
 
 namespace D4m\NgnFeed\Ebay\Model;
-
 
 class PictureDetails extends Entity
 {

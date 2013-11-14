@@ -1,12 +1,6 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/24/13 - 2:54 AM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Model;
-
 
 class InternationalShippingServiceOption extends Entity
 {

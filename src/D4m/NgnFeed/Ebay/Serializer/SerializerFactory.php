@@ -1,16 +1,10 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/6/13 - 1:01 AM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Serializer;
 
 use Symfony\Component\Serializer\Encoder\XmlEncoder;
 use Symfony\Component\Serializer\Serializer;
 use D4m\NgnFeed\Ebay\Serializer\Normalizer\GetSetMethodNormalizer;
-
 
 class SerializerFactory
 {
@@ -27,5 +21,4 @@ class SerializerFactory
 
         return $serializer;
     }
-
 }

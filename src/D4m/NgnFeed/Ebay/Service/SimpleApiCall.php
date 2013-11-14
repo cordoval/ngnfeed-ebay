@@ -1,12 +1,6 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/11/13 - 6:44 PM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Service;
-
 
 class SimpleApiCall extends BaseApiCall
 {
@@ -17,5 +11,4 @@ class SimpleApiCall extends BaseApiCall
         $this->initializeParameters($serviceName);
         $this->options = $options;
     }
-
 }

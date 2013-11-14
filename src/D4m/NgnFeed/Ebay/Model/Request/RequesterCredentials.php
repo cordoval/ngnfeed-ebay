@@ -1,9 +1,4 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/4/13 - 1:26 AM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Model\Request;
 
@@ -28,7 +23,4 @@ class RequesterCredentials extends Entity
     {
         return $this->eBayAuthToken;
     }
-
-
-
 }

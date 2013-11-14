@@ -1,15 +1,9 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 7/4/13 - 9:23 PM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Model;
 
 class ReturnPolicy extends Entity
 {
-
     protected $refundOption;
     protected $refund;
     protected $returnsWithinOption;

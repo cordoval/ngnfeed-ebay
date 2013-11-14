@@ -1,9 +1,4 @@
 <?php
-/**
- * @author: Raul Rodriguez - raulrodriguez782@gmail.com
- * @created: 9/13/13 - 1:55 AM
- * 
- */
 
 namespace D4m\NgnFeed\Ebay\Event;
 
@@ -29,5 +24,4 @@ class RequestEvent extends Event
     {
         return $this->body;
     }
-
 }
